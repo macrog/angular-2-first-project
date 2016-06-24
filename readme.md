@@ -6,4 +6,6 @@
 3) Type: `npm start`
     This launches the TypeScript compiler (tsc) to compile the application and wait for changes. 
     It also starts the lite-server and launches the browser to run the application.
+4) All from: https://github.com/DeborahK/Angular2-GettingStarted.git
+
 # angular-2-first-project - following pluralsight course.
