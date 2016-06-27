@@ -23,7 +23,6 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.ratingClicked = new core_1.EventEmitter();
                 }
                 StarComponent.prototype.ngOnChanges = function () {
-                    debugger;
                     this.starWidth = this.rating * 86 / 5;
                 };
                 StarComponent.prototype.onClick = function () {
