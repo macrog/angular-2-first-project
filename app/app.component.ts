@@ -16,7 +16,7 @@ import { WelcomeComponent } from './home/welcome.component';
     <div>
         <nav class='navbar navbar-default'>
             <div class='container-fluid'>
-                <a class='container-brand'>{{pageTitle}}</a>
+                <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['Welcome']">Home</a></li>
                     <li><a [routerLink]="['Products']">Product List</a></li>                
