@@ -36,6 +36,6 @@ export class ProductListComponent implements OnInit{
                 );
     }
     onRatingClicked(message: string): void{
-        this.panelTitle = 'Product List ' + message;
+        this.panelTitle = 'Product List :' + message;
     }
 }

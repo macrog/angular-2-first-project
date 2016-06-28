@@ -49,7 +49,7 @@ System.register(['angular2/core', 'angular2/router', './product-filter.pipe', '.
                         .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
                 };
                 ProductListComponent.prototype.onRatingClicked = function (message) {
-                    this.panelTitle = 'Product List ' + message;
+                    this.panelTitle = 'Product List :' + message;
                 };
                 ProductListComponent = __decorate([
                     core_1.Component({

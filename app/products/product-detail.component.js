@@ -37,16 +37,7 @@ System.register(['angular2/core', 'angular2/router', '../shared/star.component']
                     this._router.navigate(['Products']);
                 };
                 ProductDetailComponent.prototype.ngOnInit = function () {
-                    this.product = {
-                        productId: 12312,
-                        productName: 'string',
-                        productCode: 'string',
-                        releaseDate: 'string',
-                        price: 12312,
-                        description: 'string',
-                        starRating: 3.3,
-                        imageUrl: 'http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png'
-                    };
+                    this.product = this._routeParams.get('product');
                 };
                 ProductDetailComponent = __decorate([
                     core_1.Component({
