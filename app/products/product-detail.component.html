@@ -2,6 +2,30 @@
     <div class="panel-heading">
         {{pageTitle}}
     </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+            <div class="col-md-4">
+                <img [src]='product.imageUrl' [title]='product.productName'/>
+            </div>
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr><td><strong>Id:</strong></td><td>{{product.productId}}</td></tr>
+                            <tr><td><strong>Name:</strong></td><td>{{product.productName}}</td></tr>
+                            <tr><td><strong>Code:</strong></td><td>{{product.productCode}}</td></tr>
+                            <tr><td><strong>Release Date:</strong></td><td>{{product.releaseDate}}</td></tr>
+                            <tr><td><strong>Price:</strong></td><td>{{product.price}}</td></tr>
+                            <tr><td><strong>Description:</strong></td><td>{{product.description}}</td></tr>                            
+                            <tr><td><strong>Stars:</strong></td><td><ai-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'>
+                            </ai-star></td></tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="panel-footer">
         <a class="btn btn-default" (click)='onBack()' style="width:80px">
             <i class="glyphicon glyphicon-chevron-left"></i>Back
