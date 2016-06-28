@@ -30,8 +30,8 @@ System.register(['angular2/core', 'angular2/router', '../shared/star.component']
                     this._router = _router;
                     this.pageTitle = 'Product Detail';
                     debugger;
-                    this.id = +this._routeParams.get('id');
-                    this.pageTitle += ": " + this.id;
+                    var id = +this._routeParams.get('id');
+                    this.pageTitle += ": " + id;
                 }
                 ProductDetailComponent.prototype.onBack = function () {
                     this._router.navigate(['Products']);

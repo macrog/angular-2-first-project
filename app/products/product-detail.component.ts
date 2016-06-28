@@ -11,13 +11,12 @@ import {StarComponent} from '../shared/star.component';
 })
 
 export class ProductDetailComponent{
-    pageTitle: string = 'Product Detail';
-    id: number;
+    pageTitle: string = 'Product Detail';    
     product: IProduct;
     constructor(private _routeParams: RouteParams, private _router: Router){
         debugger;
-        this.id = +this._routeParams.get('id');         
-        this.pageTitle += `: ${this.id}`;        
+        let id = +this._routeParams.get('id');         
+        this.pageTitle += `: ${id}`;        
     }
     onBack(): void{
         this._router.navigate(['Products']);
