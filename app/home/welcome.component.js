@@ -21,6 +21,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             WelcomeComponent = (function () {
                 function WelcomeComponent() {
                     this.pageTitle = "Welcome";
+                    this.imageUrl = "https://support.bigcommerce.com/servlet/rtaImage?eid=ka61300000004XP&feoid=00N1300000BR3CT&refid=0EM130000000qWG";
                 }
                 WelcomeComponent = __decorate([
                     core_1.Component({
